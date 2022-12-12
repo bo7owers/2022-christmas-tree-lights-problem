@@ -1,3 +1,7 @@
+<script setup>
+import ChristmasTree from './ChristmasTree.vue'
+import ChristmasLights from './ChristmasLights.vue'
+</script>
 <template>
   <div class="w-full h-full flex justify-center items-center">
     <ChristmasTree :size="7">
@@ -8,8 +12,3 @@
     </ChristmasTree>
   </div>
 </template>
-
-<script setup>
-import ChristmasTree from './ChristmasTree.vue'
-import ChristmasLights from './ChristmasLights.vue'
-</script>

@@ -1,16 +1,3 @@
-<!-- You don't need to do anything in here as part of the challenge -->
-<!-- But feel free to poke around! -->
-<template>
-  <div
-    class="rounded-full bg-yellow-100 w-2 h-2 m-2 relative z-20 shadow-md twinkle"
-    :style="{
-      top: `${offsetY}px`,
-      left: `${offsetX}px`,
-      'animation-delay': `${twinkleDelay}s`,
-    }"
-  ></div>
-</template>
-
 <script setup>
 // Not important for the challenge, but some math fun:
 // Math.random() gives us in the range [0...1] so we multiply
@@ -27,6 +14,19 @@ const offsetX = Math.random() * AMPLIFY - AMPLIFY / 2
 const MAX_DELAY = 2
 const twinkleDelay = Math.random() * MAX_DELAY
 </script>
+
+<!-- You don't need to do anything in here as part of the challenge -->
+<!-- But feel free to poke around! -->
+<template>
+  <div
+    class="rounded-full bg-yellow-100 w-2 h-2 m-2 relative z-20 shadow-md twinkle"
+    :style="{
+      top: `${offsetY}px`,
+      left: `${offsetX}px`,
+      'animation-delay': `${twinkleDelay}s`,
+    }"
+  ></div>
+</template>
 
 <style scoped>
 .twinkle {

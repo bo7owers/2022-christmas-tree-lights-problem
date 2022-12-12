@@ -35,21 +35,35 @@ withDefaults(
 <style scoped>
 .star {
   scale: 1.5;
-  top: 12.5em;
+  top: 12.75rem;
   rotate: 45deg;
 }
 .star-inverted {
   scale: 1.5;
-  top: 12.5em;
+  top: 12.75rem;
   rotate: 0;
 }
 .log {
   position: relative;
-  top: 16em;
-  left: -15.25em;
+  top: 13em;
+  left: -11.75em;
 }
 .cool-bg {
   animation: bg-change 4s ease-in-out infinite;
+}
+
+/* Large displays */
+@media screen and (min-width: 1920px) {
+  .star {
+    top: 12.5em;
+  }
+  .star-inverted {
+    top: 12.5em;
+  }
+  .log {
+    top: 16em;
+    left: -15.25em;
+  }
 }
 
 @keyframes bg-change {

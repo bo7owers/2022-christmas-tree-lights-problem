@@ -14,7 +14,10 @@ withDefaults(
 
     <div class="flex flex-row justify-center">
       <!-- Create the tree sections -->
-      <div v-for="i in size" class="relative rounded-full bg-green w-16 h-16 -m-2 flex justify-center items-center" />
+      <div
+        v-for="i in size"
+        class="relative rounded-full bg-green w-16 h-16 -m-2 flex justify-center items-center"
+      ></div>
     </div>
   </div>
 </template>
